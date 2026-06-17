@@ -2,6 +2,7 @@
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import { resolve } from '$app/paths';
+	import InfoIcon from '@lucide/svelte/icons/info';
 	import { cn } from '$lib/components/utils';
 	import MoreVerticalIcon from '@lucide/svelte/icons/more-vertical';
 	import { Popover } from '$lib/components/ui/popover';
@@ -93,6 +94,13 @@
 			>
 				Emergency Contacts
 			</button>
+			<a
+				href={resolve('/about/')}
+				class="hover:bg-interactive-bg flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-sm transition-colors"
+			>
+				<InfoIcon class="size-4" />
+				About
+			</a>
 			<label
 				class="hover:bg-interactive-bg flex w-full cursor-pointer items-center justify-between rounded-md px-3 py-2 text-sm transition-colors"
 			>
