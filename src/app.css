@@ -2,6 +2,8 @@
 @import 'tw-animate-css';
 @import 'leaflet';
 
+@source not "../node_modules";
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
